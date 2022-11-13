@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/ccs/mystyle.css">
+    <title>TEE在线标注工具</title>
+</head>
+
+<script type="text/javascript">
+
+</script>
+
+<body>
+<div class ="allform">
+    <form  method =post enctype = multipart/form-data id="form-predict" action = "/predict">
+    <h1 style="margin: 0 auto; text-align: center;margin: 10px;">TEE在线标注工具</h1>
+    <div id="dcmshow">
+        <img class="dcmbox" id="img1" >
+        <img class="dcmbox" id="img2" >
+        <img class="dcmbox" id="img3" >
+        <img class="dcmbox" id="img4" >
+    </div>
+
+    <div class="scorebox">
+    </div>
+    <div class="toolsbox">
+        <div class="pagenumbox">
+            <input type="number" class="curpagenum" name="curpagenum" readonly>
+            <div class="split">/</div>
+            <input type="number" class="allpagenum" name="allpagenum" readonly>
+        </div>
+
+        <input type = "file" class="filebutton" name = "file" multiple/>
+
+        <div class="buttonbox">
+            <input class="down" type="button" value="◁">
+            <input class="up" type="button" value="▷">
+            <input class="predict" type="button" value="预测" hidden>
+            <input class="upload" type="button" value="上传">
+        </div>
+    </div>
+</form>
+<form  method =post enctype = multipart/form-data id="form-submit" action = "/submit">
+    <div class="classbox">
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="0" class="dcmclassname"/> 食管上段升主动脉长轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="1" class="dcmclassname"/> 食管中段四腔心切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="2" class="dcmclassname"/> 食管上段升主动脉短轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="3" class="dcmclassname"/> 经胃左室基底段短轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="4" class="dcmclassname"/> 降主动脉长轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="5" class="dcmclassname"/> 食管中段左室长轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="6" class="dcmclassname"/> 食管中段两腔心切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="7" class="dcmclassname"/> 食管中段主动脉瓣短轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="8" class="dcmclassname"/> 降主动脉短轴切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="9" class="dcmclassname"/> 食管中段右室流入-流出道切面</div>
+        <div class="classnamebox"><input type="radio" name="dcmclass" value="10" class="dcmclassname"/> 食管中段双腔静脉切面</div>
+    </div>
+</form>
+
+</div>
+<script src="../static/js/index.js"></script>
+
+</body>
+</html>

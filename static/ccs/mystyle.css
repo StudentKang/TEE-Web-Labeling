@@ -1,0 +1,207 @@
+.allform{
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 1100px;
+    width: 1400px;
+    margin: auto;
+	margin-top: 40rpx;
+}
+
+
+
+#dcmshow{
+    position: absolute;
+    border-style:dashed;
+    border-width: 2px;
+    border-color: black;
+    height: 900px;
+    width: 800px;
+    margin: 10px;
+    top: 60px;
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 380px);
+}
+
+.classbox{
+    position:absolute;
+    border-style:dashed;
+    border-width: 2px;
+    border-color: black;
+    height: 900px;
+    width: 400px;
+    margin: 10px;
+    top: 60px;
+    left: 810px;
+    display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.scorebox{
+    position:absolute;
+    border-style:dashed;
+    border-width: 2px;
+    border-color: black;
+    height: 900px;
+    width: 150px;
+    margin: 10px;
+    top: 60px;
+    left: 1220px;
+    display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.scorenumbox{
+    border-style: solid;
+    width: 600px;
+    height: 70px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px;
+}
+
+.classnamebox{
+    width: 600px;
+    margin: 20px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px
+}
+
+.dcmclassname{
+    width: 20px;
+    height: 20px;
+}
+
+.dcmbox{
+    background-color: white;
+    margin: 5px;
+    height: 380px;
+    width: 300px;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.toolsbox{
+    position:absolute;
+    top: 970px;
+    left: 0px;
+    margin: 10px;
+    border-style: solid;
+    border-style:dashed;
+    border-width: 2px;
+    color: black;
+    width: 1370px;
+    height: 100px;
+}
+
+
+.pagenumbox{
+    position:absolute;
+    left: 710px;
+    top: 30px;
+    border-style: hidden;
+    border-color: black;
+    border-width: 1px;
+    height: 40px;
+    width: 80px;
+}
+
+.curpagenum{
+    position:absolute;
+    top: 5px;
+    left: 0px;
+    background-color:silver;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.allpagenum{
+    position:absolute;
+    border-radius: 8px;
+    top: 5px;
+    left: 46px;
+    font-weight: bold;
+    background-color:silver;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+}
+
+.split{
+    position:absolute;
+    top: 5px;
+    left: 36px;
+    text-align: center;
+    border-style:hidden;
+    border-color: black;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    width: 10px;
+}
+
+
+.buttonbox{
+    position:absolute;
+    left: 900px;
+    border-style:hidden;
+    border-width: 1px;
+    top: 30px;
+    width: 460px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;/*重要*/
+}
+
+.upload,.predict,.up,.down{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dirpath{
+    position:absolute;
+    top: 35px;
+    left: 40px;
+    height: 30px;
+    width: 500px;
+}
+
+.selectdir{
+    position:absolute;
+    top: 35px;
+    left: 550px;
+    height:35px;
+    width: 90px;
+}
+
+.filebutton{
+    position:absolute;
+    top: 35px;
+    font-size: 20px;
+    left: 40px;
+    height: 40px;
+    width: 500px;
+}
