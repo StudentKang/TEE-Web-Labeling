@@ -52,6 +52,9 @@ Run the following scripts.
 python app.py
 ```
 Open the ip address and conresponding port in the browser.
+```
+https:// ip address : port
+```
 
 ![图片](examples/example2.jpg)
 
